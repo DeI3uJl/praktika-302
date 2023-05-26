@@ -22,29 +22,57 @@ body {
     background-image: url("../src/images/clouds.png");
     background-size: 10% 50px;
     
+    
     button {
       border: none;
       font-size: 16px;
-      color: white;
+      color: black;
       height: 35px;
       width: 60px;
-      border-radius: 6%;
+      border-radius: 2%;
       font-weight: 500;
-      background-color: #cdb4db;
+      background-color: #e9edc9;
     }
 
     span {
       width: 30px;
       height: 30px;
-      background-color: yellow;
+      //background-color: yellow;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: xx-large;
       font-weight: 800;
       color: rgb(253, 143, 0);
       -webkit-text-stroke: 1px white;
       padding: 6px;
       border-radius: 50%;
+    }
+  }
+
+  .users {
+
+    span {
+      height: 60px;
+      display: flex;
+      padding: 30px 0 0 32px;
+      color: rgb(27, 23, 23); /* Красный цвет символов */ 
+     font-size: 250%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+     position: relative; /* Относительное позиционирование */ 
+     top: 5px
+    }
+    
+    .user {
+      eight: 60px;
+      display: flex;
+      padding: 30px 0 0 32px;
+      color: rgb(102, 79, 79); /* Красный цвет символов */ 
+      font-size: small; /* Размер шрифта в процентах */ 
+      font-family: serif; /* Шрифт с засечками */ 
+      position: relative; /* Относительное позиционирование */ 
+      top: 5px
+      
     }
   }
 }

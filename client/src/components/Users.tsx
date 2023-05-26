@@ -1,9 +1,13 @@
 import React from 'react';
+import User from './User';
 
 const Users = () => {
     return (
-        <div>
-            Users
+        <div className="users">
+            <span>Пользователи</span>
+            <User />
+            <User />
+            <User />
         </div>
     );
 };
