@@ -1,5 +1,5 @@
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #4b3a3a;
 
 body {
   margin: 0px;
@@ -9,18 +9,23 @@ body {
 
 
 .app {
-  height: 100vh;
+  height: 100vh;;
   background-color: #CABBED;
   flex-direction: column; 
-  
+  background-image: url("../src/images/imandy-bolsyn.gif");
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 650px;
+
   .header {
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 32px 0 32px;
-    background-image: url("../src/images/clouds.png");
+    background-image: url("../src/images/zzzz.jpg");
     background-size: 10% 50px;
+
     
     
     button {
@@ -28,10 +33,23 @@ body {
       font-size: 16px;
       color: black;
       height: 35px;
-      width: 60px;
+      width: 140px;
       border-radius: 2%;
       font-weight: 500;
       background-color: #e9edc9;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+
+      &:after {
+        margin-top: 4px;
+        margin-left: 20px;
+        margin-right: 25px;
+      }
+
+      &:hover {
+        background-color: #ff9100;
+      }
     }
 
     span {
@@ -41,38 +59,135 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: xx-large;
-      font-weight: 800;
+      font-size: x-large;
+      font-weight: 600;
       color: rgb(253, 143, 0);
       -webkit-text-stroke: 1px white;
       padding: 6px;
       border-radius: 50%;
+      
+    }
+
+    .search {
+      input {
+        color: #7c0606;
+        font-family: 'SanFrancisco';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        border: none;
+        outline: none;
+      }
     }
   }
 
   .users {
-
-    span {
-      height: 60px;
-      display: flex;
-      padding: 30px 0 0 32px;
-      color: rgb(27, 23, 23); /* Красный цвет символов */ 
-     font-size: 250%; /* Размер шрифта в процентах */ 
-     font-family: serif; /* Шрифт с засечками */ 
-     position: relative; /* Относительное позиционирование */ 
-     top: 5px
-    }
+    height: calc(100% - 100px);
+    width: 80%;
+    overflow-y: auto;
+    margin-top: 24px;
     
-    .user {
-      eight: 60px;
+    .user_card {
+      margin-bottom: 24px;
+      width: calc(100% - 10px);
+      height: 120px;
       display: flex;
-      padding: 30px 0 0 32px;
-      color: rgb(102, 79, 79); /* Красный цвет символов */ 
-      font-size: small; /* Размер шрифта в процентах */ 
-      font-family: serif; /* Шрифт с засечками */ 
-      position: relative; /* Относительное позиционирование */ 
-      top: 5px
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 5px #E9EDF3;
+
+
+      &:hover {
+        background-color: #EAF0FA;
+
+        .delete_button {
+          background-color: #EAF0FA;
+        }
+
+        .update_button {
+          background-color: #EAF0FA;
+        }
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+
+        span {
+          font-family: 'SanFrancisco';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color: #122945;
+          padding-left: 24px;
+        }
+      }
+      .pc_info {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+
+        span {
+          display: flex;
+          justify-content: space-around;
+          font-family: 'SanFrancisco';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          margin-bottom: 8px;
+          color: #122945;
+        }
+
+        .left_info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .right_info {
+          display: flex;
+          flex-direction: column;
+        }
+      }
       
+      .buttons {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          width: 122px;
+          height: 40px;
+          margin: 10px;
+          font-family: 'SanFrancisco';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color: #002CFB;
+          border: 1px solid #002CFB;
+          border-radius: 4px;
+          background-color: white;
+        }
+
+        .update_button {
+          &:hover {
+            color: white;
+            background: #002CFB;
+          }
+        }
+
+        .delete_button {
+          border: 1px solid #EA1A4F;
+          color: #EA1A4F;
+
+          &:hover {
+            color: white;
+            background: #EA1A4F;
+          }
+        }
+      }
     }
   }
 }
