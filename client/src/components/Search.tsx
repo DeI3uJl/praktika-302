@@ -2,8 +2,8 @@ import React from 'react';
 
 const Search = () => {
     return (
-        <div >
-            
+        <div className="search">
+            <img src="../images/zzzz.jpg" alt="Z"/>
             <input/>
         </div>
     );

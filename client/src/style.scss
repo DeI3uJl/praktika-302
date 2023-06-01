@@ -9,21 +9,22 @@ body {
 
 
 .app {
-  height: 100vh;;
+  height: 100vh;
   background-color: #CABBED;
   flex-direction: column; 
   background-image: url("../src/images/alpha-chad.gif");
   justify-content: space-between;
   align-items: center;
-  background-size: 100% 650px;
-
+  background-size: 33% 1000px;
+  
+  
   .header {
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 32px 0 32px;
-    background-image: url("../src/images/zzzz.jpg");
+    //background-image: url("../src/images/zzzz.jpg");
     background-size: 10% 50px;
 
     
@@ -69,6 +70,11 @@ body {
     }
 
     .search {
+      flex-direction: column; 
+      justify-content: space-between;
+      align-items: center;
+      background-size: 100% 18px;
+      background-image: url(../src/images/zzzz.jpg);
       input {
         color: #7c0606;
         font-family: 'SanFrancisco';
@@ -77,6 +83,16 @@ body {
         font-weight: 400;
         border: none;
         outline: none;
+      }
+
+      img {
+        margin-left: 18px;
+        margin-right: 12px;
+        background-size: 10% 50px;
+        
+        display: flex;
+        font-size: 1em;
+        
       }
     }
   }

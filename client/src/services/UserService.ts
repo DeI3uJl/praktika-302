@@ -19,7 +19,7 @@ export default class UserService {
                 numberPhone,
                 position,
                 jobPlace
-            });
+            }  );
     }
 
     static async deleteUser(id:string): Promise<AxiosResponse<UserResponse>>{
